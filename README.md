@@ -1,17 +1,17 @@
-# Ping-Pong Game
+# Triangle Tracker
 
-## Author: Lubembe Michael
+## Author: Traciekay
 
-![alt="photo of michael" width="100" height="100"](img/bg.jpg)
+![alt="photo of logo" width="100" height="100"](img/logo.jpg)
 
-### **Lubembe Michael's Website**
+### **Triangle Tracker**
 
-_My Website is a Journey of Inspiration through Moringa School. It highlights, who I am, the projects I am working on so far, things I do when I am not coding and how you can be able to contact me. It is a Journeyworth travelling together. Fasten your seatbelts as I take you through my Programming life. ENJOY!!!_
+_This is a program that determines the type of triangle_
 
 Link to Site:
 
 ------------------
-https://mikelubs.github.io/ping-pong/
+https://github.com/traciekay/triangletracker.git
 ------------------
 
 License   
