@@ -5,15 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Online Store</title>
+    <title>Triangle Tracker</title>
     <!-- Bootstrap -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cookie|Delius|Delius+Swash+Caps|Pacifico|Ruluko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Croissant+One" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,115 +21,45 @@
     <![endif]-->
   </head>
   <body>
-    <div class="container-fluid header-lg row">
-      <div class="col-md-12 header">
-          <h1><i class="fa fa-shopping-bag" aria-hidden="true"></i>Online Store</h1>
-      </div>
-    </div>
-
-    <div class="container-fluid header-sm">
+    <div class="container-fluid header-lg">
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-          <h2>Enter Details to Purchase the commodity</h2>
+        <div class="col-md-12 header">
+          <h1><i class="fa fa-caret-up" aria-hidden="true"></i>Triangle Tracker</h1>
         </div>
       </div>
     </div>
 
-    <div class="large">
-      <div class="container-fluid">
+    <div class="container-fluid large">
       <div class="row">
-        <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6">
-          <div id="blanks">
-            <form>
-              <div class="form-group">
-                <label for="firstname"></label>
-                <input id="firstname" class="form-control" type="text" placeholder="First Name..." required="">
-              </div>
-              <div class="form-group">
-                <label for="lastname"></label>
-                <input id="lastname" class="form-control" type="text" placeholder="Last Name..." required="">
-              </div>
-              <div class="form-group">
-                <label for="streetname"></label>
-                <input id="streetname" class="form-control" type="text" placeholder="Estate..." required="">
-              </div>
-              <div class="form-group">
-                <label for="buildingname"></label>
-                <input id="buildingname" class="form-control" type="text" placeholder="Building..." required="">
-              </div>
-              <div class="form-group">
-                <label for="floornumber"></label>
-                <input id="floornumber" class="form-control" type="text" placeholder="Floor...." required="">
-              </div>
-              <div class="form-group">
-                <label for="roomnumber"></label>
-                <input id="roomnumber" class="form-control" type="text" placeholder="Room..." required="">
-              </div>
-              <button type="submit" class="btn">Purchase</button>
-            </form>
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6  col-sm-12  col-xs-12">
+          <form class="form-group" action="index.html" method="post" id="form1">
+            <div class="form-group">
+              <input id="sideA" class="form-control" type="number" placeholder="Side A..." required="">
+            </div>
+            <div class="form-group">
+              <input id="sideB" class="form-control" type="number" placeholder="Side B..." required="">
+            </div>
+            <div class="form-group">
+              <input id="sideC" class="form-control" type="number" placeholder="Side C..." required="">
+            </div>
+            <button type="submit" class="btn">Triangle Type</button>
+          </form>
+
+          <div class="">
+            <p id="demo"></p>
           </div>
 
-          <div id="thankyou">
-            <h4>Online Store</h4>
-            <p><span class="firstname"></span> <span class="lastname"></span>, your order will be delivered to:
-              <ul>
-                <li><span class="streetname"></span> Estate</li>
-                <li><span class="buildingname"></span> Building</li>
-                <li>Floor <span class="floornumber"></span></li>
-                <li>Room <span class="roomnumber"></span></li>
-              </ul>
-            <p>Thank you for Shopping with us.</p>
-          </div>
-        </div>
-        </div>
-      </div>
-
-
-
-      <div class="container-fluid receipt" id="receipt">
-        <div class="row">
-          <div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 col-xs-offset-3 col-xs-6">
-            <h3>Online Store Receipt</h3>
-            <table class="table" id="table1">
-              <tr>
-                <th>Order</th>
-                <th>Qty</th>
-                <th>Price (Kshs.)</th>
-              </tr>
-              <tr>
-                <td>Pizza</td>
-                <td>1</td>
-                <td>1000</td>
-              </tr>
-              <tr>
-                <td>Bhajia</td>
-                <td>3</td>
-                <td>750</td>
-              </tr>
-              <tr>
-                <td>Crisps</td>
-                <td>10</td>
-                <td>800</td>
-              </tr>
-              <tr>
-                <td>TOTALS</td>
-                <td></td>
-                <td>2550</td>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <p id="thankYou"></p>
-          </div>
         </div>
       </div>
     </div>
 
+    <div class="container-fluid footer">
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy Triangle Tracker</p>
+        </div>
+      </div>
+    </div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

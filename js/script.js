@@ -1,24 +1,22 @@
 $(document).ready(function() {
-   $("#blanks form").submit(function(event) {
-     var firstnameInput = $("input#firstname").val();
-     var lastnameInput = $("input#lastname").val();
-     var streetnameInput= $("input#streetname").val();
-     var buildingnameInput = $("input#buildingname").val();
-     var floornumberInput = $("input#floornumber").val();
-     var roomnumberInput = $("input#roomnumber").val();
-
-     $(".firstname").text(firstnameInput);
-     $(".lastname").text(lastnameInput);
-     $(".streetname").text(streetnameInput);
-     $(".buildingname").text(buildingnameInput);
-     $(".floornumber").text(floornumberInput);
-     $(".roomnumber").text(roomnumberInput);
-
-     $("#thankyou").show();
-     $("#receipt").show();
-     $("#blanks").slideUp();
-
-
-     event.preventDefault();
-   });
+  $("#form1").submit(function(event){
+  var a = parseInt($("input#sideA").val());
+  var b = parseInt($("input#sideB").val());
+  var c = parseInt($("input#sideC").val());
+  var text = "";
+    if (a+b <= c || a+c <= b || c+b <=a) {
+      text += "Not a Triangle"
+    }
+    else if ((a===b && b!==c && c!==a) || (a!==b && b!==c && c===a) || (a!==b && b===c && c!==a)) {
+      text += "Isoscless Triangle"
+    }
+    else if (a===b && b===c && c===a) {
+      text += "Equilateral"
+    }
+    else {
+      text += "Scalene Triangle"
+    }
+    document.getElementById("demo").innerHTML = text;
+    event.preventDefault();
+  });
  });
